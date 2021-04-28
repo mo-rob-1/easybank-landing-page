@@ -358,5 +358,8 @@ body {
 /**
 * Basic typography style for copy text
 */
+body {
+  font-family: "Public Sans", sans-serif;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
