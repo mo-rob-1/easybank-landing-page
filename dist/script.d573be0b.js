@@ -117,18 +117,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/PopUp.js":[function(require,module,exports) {
-// alert("I am an alert box!");
-console.log("I am an alert box!");
-},{}],"js/ConsoleLog.js":[function(require,module,exports) {
-console.log("Hello world!");
-},{}],"js/script.js":[function(require,module,exports) {
-"use strict";
+})({"js/script.js":[function(require,module,exports) {
 
-require("./PopUp");
-
-require("./ConsoleLog");
-},{"./PopUp":"js/PopUp.js","./ConsoleLog":"js/ConsoleLog.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -156,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59618" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64512" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

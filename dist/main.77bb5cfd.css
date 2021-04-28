@@ -352,28 +352,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #7d9bdb;
   text-rendering: optimizeSpeed;
-}
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: red;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  body {
-    background-color: green;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  body {
-    background-color: yellow;
-  }
 }
 
 /**

@@ -19,18 +19,5 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: $color;
   text-rendering: optimizeSpeed;
-  @include responsive(tablet) {
-    background-color: red;
-  }
-  @include responsive(laptop) {
-    background-color: blue;
-  }
-  @include responsive(laptop-lg) {
-    background-color: green;
-  }
-  @include responsive(desktop) {
-    background-color: yellow;
-  }
 }
