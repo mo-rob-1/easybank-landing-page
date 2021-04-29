@@ -29,3 +29,26 @@ body {
     font-size: 0.9rem;
   }
 }
+
+.feature {
+  &__title {
+    font-weight: 300;
+    color: $darkBlue;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  &__desc {
+    line-height: 1.5;
+    color: $grayishBlue;
+    font-size: 0.9rem;
+  }
+  &__icon-title {
+    font-weight: 300;
+    color: $darkBlue;
+  }
+  &__icon-desc {
+    line-height: 1.5;
+    color: $grayishBlue;
+    font-size: 0.9rem;
+  }
+}
