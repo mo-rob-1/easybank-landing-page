@@ -381,6 +381,27 @@ body {
   font-size: 0.9rem;
 }
 
+.feature__title {
+  font-weight: 300;
+  color: #2d314d;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.feature__desc {
+  line-height: 1.5;
+  color: #9698a6;
+  font-size: 0.9rem;
+}
+.feature__icon-title {
+  font-weight: 300;
+  color: #2d314d;
+}
+.feature__icon-desc {
+  line-height: 1.5;
+  color: #9698a6;
+  font-size: 0.9rem;
+}
+
 .header__container {
   padding: 1.2rem;
 }
@@ -428,6 +449,19 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 93%;
+}
+
+.feature {
+  background-color: #f3f4f6;
+}
+.feature__container {
+  padding: 3rem 1.2rem;
+  text-align: center;
+}
+.feature__icon-container {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3.9rem;
 }
 
 .hero__button {
