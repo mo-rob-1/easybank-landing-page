@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.header {
+  &__container {
+    padding: 1.2rem;
+  }
+  &__hamburger-icon {
+    cursor: pointer;
+    position: relative;
+    top: 0.2rem;
+    float: right;
+  }
+  &__button-wrapper {
+    display: none;
+  }
+  &__wrapper-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
