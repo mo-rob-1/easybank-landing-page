@@ -8,13 +8,15 @@
     margin: 1.2rem;
     position: absolute;
     text-align: center;
-    top: 4.2rem;
+    top: 3.1rem;
     left: 0;
     right: 0;
     background-color: $white;
     padding: 0.7rem;
     line-height: 2.7;
     border-radius: 0.5rem;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   &__nav-list-item {
     list-style-type: none;
