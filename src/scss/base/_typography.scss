@@ -14,3 +14,18 @@ body {
     font-size: 1.1rem;
   }
 }
+
+.hero {
+  &__title {
+    font-weight: 300;
+    color: $darkBlue;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  &__desc {
+    line-height: 1.5;
+    color: $grayishBlue;
+    font-size: 0.9rem;
+  }
+}
