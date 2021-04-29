@@ -431,6 +431,19 @@ body {
   color: #9698a6;
 }
 
+.footer__author {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 0.6rem;
+}
+
+.footer__author a {
+  color: white;
+}
+
 .header__container {
   padding: 1.2rem;
 }
