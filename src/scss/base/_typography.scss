@@ -6,3 +6,11 @@
 body {
   font-family: $primaryFont;
 }
+
+.header {
+  &__nav-link {
+    text-decoration: none;
+    color: $darkBlue;
+    font-size: 1.1rem;
+  }
+}

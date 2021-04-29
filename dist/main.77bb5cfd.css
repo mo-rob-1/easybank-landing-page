@@ -362,4 +362,47 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+.header__nav-link {
+  text-decoration: none;
+  color: #2d314d;
+  font-size: 1.1rem;
+}
+
+.header__container {
+  padding: 1.2rem;
+}
+.header__hamburger-icon {
+  cursor: pointer;
+  position: relative;
+  top: 0.2rem;
+  float: right;
+}
+.header__button-wrapper {
+  display: none;
+}
+.header__wrapper-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.header__nav {
+  display: none;
+}
+.header__nav-list {
+  margin: 1.2rem;
+  position: absolute;
+  text-align: center;
+  top: 4.2rem;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 0.7rem;
+  line-height: 2.7;
+  border-radius: 0.5rem;
+}
+.header__nav-list-item {
+  list-style-type: none;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
