@@ -15,15 +15,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="scss/main.scss" />
-    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
+        
+      <div class="header__wrapper-mobile">
         <div class="header__logo-wrapper">
           <a class="header__logo-link" href="#"><img class="header__logo" src="images/logo.svg" alt="Easybank Logo" /></a>
         </div>
-        <nav class="header__nav">
+
+        <div class="header__hamburger-wrapper">
+          <img class="header__hamburger-icon" id="toggle_btn" src="images/icon-hamburger.svg" alt="Hamburger icon" />
+        </div>
+      </div>
+
+        <nav class="header__nav show-nav">
           <ul class="header__nav-list">
             <li class="header__nav-list-item"><a class="header__nav-link" href="#">Home</a></li>
             <li class="header__nav-list-item"><a class="header__nav-link" href="#">About</a></li>
@@ -35,9 +42,6 @@
         <div class="header__button-wrapper">
           <button class="header__button" type="button">Request Invite</button>
         </div>
-      </div>
-      <div class="header__hamburger-wrapper">
-        <img src="images/icon-hamburger.svg" alt="Hamburger icon" />
       </div>
     </header>
 
@@ -212,5 +216,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
