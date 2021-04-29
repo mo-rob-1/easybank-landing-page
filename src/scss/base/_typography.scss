@@ -52,3 +52,13 @@ body {
     font-size: 0.9rem;
   }
 }
+
+.articles {
+  &__title {
+    font-weight: 300;
+    color: $darkBlue;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+}

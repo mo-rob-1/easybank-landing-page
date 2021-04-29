@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.articles {
+  &__card-container {
+    display: grid;
+    gap: 1.6rem;
+  }
+  &__card-link {
+    text-decoration: none;
+  }
+  &__card-img {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  &__card-text-wrapper {
+    background-color: $white;
+    padding: 2rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  &__card-author {
+    color: $grayishBlue;
+    font-size: 0.8rem;
+  }
+  &__card-title {
+    color: $darkBlue;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  &__card-title:hover {
+    color: $limeGreen;
+  }
+  &__card-desc {
+    color: $grayishBlue;
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+}
