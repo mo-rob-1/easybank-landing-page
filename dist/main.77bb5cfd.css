@@ -410,6 +410,27 @@ body {
   text-align: center;
 }
 
+.footer__nav {
+  color: white;
+}
+.footer__nav-list {
+  padding: 0;
+}
+.footer__nav-list-item {
+  list-style-type: none;
+  line-height: 2.6;
+}
+.footer__nav-list-item-link {
+  text-decoration: none;
+  color: white;
+}
+.footer__nav-list-item-link:hover {
+  color: #31d35c;
+}
+.footer__copyright {
+  color: #9698a6;
+}
+
 .header__container {
   padding: 1.2rem;
 }
@@ -481,7 +502,36 @@ body {
   padding-bottom: 6rem;
 }
 
-.hero__button {
+.footer {
+  background-color: #2d314d;
+}
+.footer__container {
+  text-align: center;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+}
+.footer__socials-wrapper {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.fab {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fab:hover {
+  color: #31d35c;
+}
+
+.fab:nth-child(5) {
+  margin-right: 0;
+}
+
+.hero__button,
+.footer__button {
   border: none;
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   padding: 1rem;
@@ -494,6 +544,10 @@ body {
   font-size: 0.9rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   margin-top: 0.7rem;
+}
+
+.footer__button {
+  margin-bottom: 2rem;
 }
 
 .articles__card-container {

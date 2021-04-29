@@ -1,1 +1,27 @@
+@use '../abstracts' as *;
 
+.footer {
+  background-color: $darkBlue;
+  &__container {
+    text-align: center;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+  &__socials-wrapper {
+    color: $white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.fab {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.fab:hover {
+  color: $limeGreen;
+}
+.fab:nth-child(5) {
+  margin-right: 0;
+}

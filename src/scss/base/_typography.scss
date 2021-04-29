@@ -62,3 +62,26 @@ body {
     text-align: center;
   }
 }
+
+.footer {
+  &__nav {
+    color: $white;
+  }
+  &__nav-list {
+    padding: 0;
+  }
+  &__nav-list-item {
+    list-style-type: none;
+    line-height: 2.6;
+  }
+  &__nav-list-item-link {
+    text-decoration: none;
+    color: $white;
+  }
+  &__nav-list-item-link:hover {
+    color: $limeGreen;
+  }
+  &__copyright {
+    color: $grayishBlue;
+  }
+}
