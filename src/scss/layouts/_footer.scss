@@ -14,6 +14,18 @@
       padding-right: 2rem;
       padding-bottom: 0;
     }
+    @include responsive(laptop) {
+      margin: 0 auto;
+      max-width: 1024px;
+    }
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    @include responsive(desktop) {
+      margin: 0 auto;
+      max-width: 1500px;
+    }
   }
   &__socials-wrapper {
     color: $white;
@@ -23,12 +35,25 @@
   &__nav-list {
     @include responsive(tablet) {
       margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  &__nav-list-wrapper--mr {
+    @include responsive(tablet) {
+      margin-right: 3rem;
+    }
+    @include responsive(laptop) {
+      margin-right: 9rem;
     }
   }
   &__col-1 {
     @include responsive(tablet) {
       text-align: left;
-      justify-content: center;
+      justify-content: space-between;
       display: flex;
       flex-direction: column;
     }
@@ -36,11 +61,17 @@
   &__col-3 {
     @include responsive(tablet) {
       text-align: end;
-      justify-content: center;
+      justify-content: space-between;
       display: flex;
       flex-direction: column;
       position: relative;
       bottom: 1rem;
+    }
+  }
+  &__copyright {
+    @include responsive(tablet) {
+      position: relative;
+      bottom: 0.5rem;
     }
   }
 }

@@ -10,6 +10,29 @@
       padding-left: 2rem;
       padding-right: 2rem;
     }
+    @include responsive(laptop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      margin: 0 auto;
+      max-width: 1024px;
+    }
+
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    @include responsive(desktop) {
+      margin: 0 auto;
+      max-width: 1500px;
+    }
+  }
+  &__hamburger-wrapper {
+    @include responsive(laptop) {
+      display: none;
+    }
   }
   &__hamburger-icon {
     cursor: pointer;
@@ -19,10 +42,20 @@
   }
   &__button-wrapper {
     display: none;
+    @include responsive(laptop) {
+      display: block;
+      text-align: end;
+    }
   }
   &__wrapper-mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+  }
+  &__logo-wrapper {
+    @include responsive(laptop) {
+      display: flex;
+      align-items: center;
+    }
   }
 }

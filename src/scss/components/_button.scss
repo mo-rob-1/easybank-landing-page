@@ -1,7 +1,8 @@
 @use '../abstracts' as *;
 
 .hero__button,
-.footer__button {
+.footer__button,
+.header__button {
   border: none;
   background-image: linear-gradient(to right, $limeGreen, $brightCyan);
   padding: 1rem;
@@ -10,7 +11,7 @@
   border-radius: 3rem;
   cursor: pointer;
   color: $white;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   margin-top: 0.7rem;
@@ -19,7 +20,10 @@
 .footer__button {
   margin-bottom: 2rem;
   @include responsive(tablet) {
-    margin-top: 0;
     margin-bottom: 1rem;
   }
+}
+
+.header__button {
+  margin-top: 0;
 }

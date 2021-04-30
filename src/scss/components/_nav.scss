@@ -3,6 +3,11 @@
 .header {
   &__nav {
     display: none;
+    @include responsive(laptop) {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
   }
   &__nav-list {
     margin: 1.2rem;
@@ -17,8 +22,22 @@
     border-radius: 0.5rem;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @include responsive(laptop) {
+      position: initial;
+      box-shadow: none;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      line-height: initial;
+      display: flex;
+    }
   }
   &__nav-list-item {
     list-style-type: none;
+  }
+  &__nav-link {
+    @include responsive(laptop) {
+      margin-right: 2rem;
+    }
   }
 }

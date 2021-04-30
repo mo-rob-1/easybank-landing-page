@@ -11,6 +11,22 @@
     @include responsive(tablet) {
       padding: 3rem 2rem;
     }
+    @include responsive(laptop) {
+      margin: 0 auto;
+      max-width: 1024px;
+      text-align: left;
+    }
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding-bottom: 5rem;
+    }
+    @include responsive(desktop) {
+      margin: 0 auto;
+      max-width: 1500px;
+      padding-top: 5rem;
+      padding-bottom: 8rem;
+    }
   }
   &__icon-container {
     display: grid;
@@ -21,6 +37,10 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
     }
+    @include responsive(laptop) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
   }
   &__desc {
     @include responsive(tablet-sm) {
@@ -28,6 +48,15 @@
       max-width: 400px;
       margin-top: 1rem;
       margin-bottom: 1rem;
+    }
+    @include responsive(laptop) {
+      margin: initial;
+      max-width: 550px;
+    }
+  }
+  &__icon-desc {
+    @include responsive(desktop) {
+      max-width: 300px;
     }
   }
 }

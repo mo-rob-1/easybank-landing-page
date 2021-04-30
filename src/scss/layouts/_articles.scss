@@ -11,5 +11,20 @@
     @include responsive(tablet) {
       padding: 3rem 2rem;
     }
+    @include responsive(laptop) {
+      margin: 0 auto;
+      max-width: 1024px;
+    }
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding-bottom: 5rem;
+    }
+    @include responsive(desktop) {
+      margin: 0 auto;
+      max-width: 1500px;
+      padding-top: 5rem;
+      padding-bottom: 8rem;
+    }
   }
 }

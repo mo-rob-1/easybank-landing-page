@@ -1,24 +1,89 @@
 @use '../abstracts' as *;
 
 .hero {
+  background-color: $VeryLightGray;
   &__container {
     display: grid;
+    @include responsive(laptop) {
+      // display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      display: grid;
+      align-items: center;
+    }
+    @include responsive(laptop) {
+      margin: 0 auto;
+      max-width: 1024px;
+    }
+    @include responsive(laptop-lg) {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    @include responsive(desktop) {
+      margin: 0 auto;
+      max-width: 1500px;
+    }
   }
   &__col-1 {
     padding: 1.2rem;
     padding-bottom: 5.5rem;
     text-align: center;
     order: 2;
+    @include responsive(laptop) {
+      padding: 0;
+      text-align: left;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      // margin: 0 auto;
+      // max-width: 1024px;
+    }
+    // @include responsive(laptop) {
+    //   margin: 0 auto;
+    //   max-width: 1024px;
+    // }
+    // @include responsive(laptop-lg) {
+    //   margin: 0 auto;
+    //   max-width: 1300px;
+    // }
+    // @include responsive(desktop) {
+    //   margin: 0 auto;
+    //   max-width: 1500px;
+    // }
   }
   &__col-2 {
     order: 1;
+    @include responsive(laptop) {
+      flex: 2;
+      order: 2;
+      min-height: 30rem;
+    }
   }
+  // &__col-1-text-wrapper {
+  //   @include responsive(laptop) {
+  //     margin: 0 auto;
+  //     max-width: 1024px;
+  //   }
+  //   @include responsive(laptop-lg) {
+  //     margin: 0 auto;
+  //     max-width: 1300px;
+  //   }
+  //   @include responsive(desktop) {
+  //     margin: 0 auto;
+  //     max-width: 1500px;
+  //   }
+  // }
   &__desc {
     @include responsive(tablet-sm) {
       margin: auto;
       max-width: 400px;
       margin-top: 1rem;
       margin-bottom: 1rem;
+    }
+    @include responsive(laptop) {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
   &__img {
@@ -29,6 +94,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 17.5rem;
+    @include responsive(laptop) {
+      flex: 3;
+      order: 2;
+      min-height: 40rem;
+      background-image: url("/images/bg-intro-desktop.svg");
+      background-position: left center;
+      background-size: auto;
+    }
     &::before {
       content: "";
       width: 100%;
@@ -38,6 +111,30 @@
       background-position: center bottom;
       background-repeat: no-repeat;
       background-size: 93%;
+      @include responsive(laptop) {
+        min-height: 30rem;
+        z-index: 2;
+        height: 100%;
+      }
+      @include responsive(laptop-lg) {
+        height: 100%;
+      }
     }
+    // &::after {
+    //   @include responsive(laptop) {
+    //     min-height: 30rem;
+    //     content: "";
+    //     width: 120%;
+    //     height: 122%;
+    //     position: absolute;
+    //     background-image: url("/images/bg-intro-desktop.svg");
+
+    //     background-repeat: no-repeat;
+    //     background-size: 94%;
+    //     background-position: center 150%;
+    //     z-index: 1;
+    //     left: 22%;
+    //   }
+    // }
   }
 }
