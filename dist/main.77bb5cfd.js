@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"F:\\easybank-landing-page\\src\\images\\bg-intro-mobile.svg":[["bg-intro-mobile.2783d013.svg","images/bg-intro-mobile.svg"],"images/bg-intro-mobile.svg"],"F:\\easybank-landing-page\\src\\images\\image-mockups.png":[["image-mockups.82980908.png","images/image-mockups.png"],"images/image-mockups.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"F:\\easybank-landing-page\\src\\images\\bg-intro-mobile.svg":[["bg-intro-mobile.2783d013.svg","images/bg-intro-mobile.svg"],"images/bg-intro-mobile.svg"],"F:\\easybank-landing-page\\src\\images\\bg-intro-desktop.svg":[["bg-intro-desktop.d745898a.svg","images/bg-intro-desktop.svg"],"images/bg-intro-desktop.svg"],"F:\\easybank-landing-page\\src\\images\\image-mockups.png":[["image-mockups.82980908.png","images/image-mockups.png"],"images/image-mockups.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64522" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53196" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
