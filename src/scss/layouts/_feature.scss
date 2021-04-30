@@ -5,10 +5,29 @@
   &__container {
     padding: 3rem 1.2rem;
     text-align: center;
+    @include responsive(tablet-sm) {
+      padding: 3rem 1.5rem;
+    }
+    @include responsive(tablet) {
+      padding: 3rem 2rem;
+    }
   }
   &__icon-container {
     display: grid;
     gap: 2rem;
     margin-top: 3.9rem;
+    @include responsive(tablet-sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  &__desc {
+    @include responsive(tablet-sm) {
+      margin: auto;
+      max-width: 400px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 }

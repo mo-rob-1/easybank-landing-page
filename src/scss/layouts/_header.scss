@@ -3,6 +3,13 @@
 .header {
   &__container {
     padding: 1.2rem;
+    @include responsive(tablet-sm) {
+      padding: 1.5rem;
+    }
+    @include responsive(tablet) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   &__hamburger-icon {
     cursor: pointer;

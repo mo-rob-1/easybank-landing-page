@@ -5,5 +5,11 @@
   &__container {
     padding: 3rem 1.2rem;
     padding-bottom: 6rem;
+    @include responsive(tablet-sm) {
+      padding: 3rem 1.5rem;
+    }
+    @include responsive(tablet) {
+      padding: 3rem 2rem;
+    }
   }
 }

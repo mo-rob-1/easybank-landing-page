@@ -6,11 +6,42 @@
     text-align: center;
     padding-top: 2.6rem;
     padding-bottom: 1rem;
+    @include responsive(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 0;
+    }
   }
   &__socials-wrapper {
     color: $white;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+  &__nav-list {
+    @include responsive(tablet) {
+      margin-top: 0;
+    }
+  }
+  &__col-1 {
+    @include responsive(tablet) {
+      text-align: left;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__col-3 {
+    @include responsive(tablet) {
+      text-align: end;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 1rem;
+    }
   }
 }
 

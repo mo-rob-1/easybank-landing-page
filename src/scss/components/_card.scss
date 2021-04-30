@@ -4,6 +4,11 @@
   &__card-container {
     display: grid;
     gap: 1.6rem;
+    @include responsive(tablet-sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
   &__card-link {
     text-decoration: none;

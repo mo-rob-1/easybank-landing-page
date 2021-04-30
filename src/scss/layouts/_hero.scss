@@ -13,6 +13,14 @@
   &__col-2 {
     order: 1;
   }
+  &__desc {
+    @include responsive(tablet-sm) {
+      margin: auto;
+      max-width: 400px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
   &__img {
     width: 100%;
     position: relative;
