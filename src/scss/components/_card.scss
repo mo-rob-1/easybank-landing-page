@@ -19,11 +19,13 @@
   }
   &__card {
     transition: 0.2s ease-in;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
   &__card:hover {
-    transform: translateY(-1px);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    // -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   &__card-link {
     text-decoration: none;
@@ -35,12 +37,16 @@
     height: 200px;
     display: block;
     object-fit: cover;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
   &__card-text-wrapper {
     background-color: $white;
     padding: 2rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
   &__card-author {
     color: $grayishBlue;

@@ -40,4 +40,13 @@
       margin-right: 2rem;
     }
   }
+  &__nav-link:hover {
+    color: $limeGreen;
+  }
+}
+
+header nav {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }

@@ -29,6 +29,11 @@
       @content;
     }
   }
+  @if $breakpoint == desktop-md {
+    @media only screen and (min-width: 1921px) {
+      @content;
+    }
+  }
   @if $breakpoint == desktop-lg {
     @media only screen and (min-width: 2500px) {
       @content;

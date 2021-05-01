@@ -17,14 +17,17 @@
     @include responsive(laptop) {
       margin: 0 auto;
       max-width: 1024px;
+      padding-top: 3rem;
+      padding-bottom: 1rem;
     }
     @include responsive(laptop-lg) {
       margin: 0 auto;
       max-width: 1200px;
+      padding-top: 4rem;
     }
     @include responsive(desktop) {
       margin: 0 auto;
-      max-width: 1500px;
+      max-width: 1400px;
     }
   }
   &__socials-wrapper {
