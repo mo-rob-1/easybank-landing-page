@@ -43,7 +43,7 @@
     }
   }
   &__col-1-text-wrapper {
-    @include responsive(laptop) {
+    @include responsive(laptop-lg) {
       margin: 0 auto;
       max-width: 360px;
     }

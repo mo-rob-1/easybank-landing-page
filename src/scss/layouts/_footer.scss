@@ -15,8 +15,6 @@
       padding-bottom: 0;
     }
     @include responsive(laptop) {
-      margin: 0 auto;
-      max-width: 1024px;
       padding-top: 3rem;
       padding-bottom: 1rem;
       padding-left: 4rem;
@@ -89,6 +87,7 @@
   margin-right: 0.8rem;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 .fab:hover {
   color: $limeGreen;

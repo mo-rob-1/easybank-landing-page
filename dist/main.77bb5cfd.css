@@ -518,8 +518,6 @@ body {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 0 auto;
-    max-width: 1024px;
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -621,7 +619,7 @@ body {
     min-height: 30rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .hero__col-1-text-wrapper {
     margin: 0 auto;
     max-width: 360px;
@@ -711,16 +709,15 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .feature__container {
-    margin: 0 auto;
-    max-width: 1024px;
-    text-align: left;
     padding: 3rem 4rem;
+    padding-bottom: 6rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .feature__container {
     margin: 0 auto;
     max-width: 1200px;
+    text-align: left;
     padding-bottom: 5rem;
   }
 }
@@ -744,7 +741,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .feature__icon-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -760,13 +757,18 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .feature__desc {
-    margin: initial;
     max-width: 550px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .feature__desc {
+    margin: initial;
   }
 }
 @media only screen and (min-width: 1024px) {
   .feature__icon-desc {
     max-width: 360px;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -794,9 +796,8 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .articles__container {
-    margin: 0 auto;
-    max-width: 1024px;
     padding: 3rem 4rem;
+    padding-bottom: 6rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -835,8 +836,6 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .footer__container {
-    margin: 0 auto;
-    max-width: 1024px;
     padding-top: 3rem;
     padding-bottom: 1rem;
     padding-left: 4rem;
@@ -915,6 +914,7 @@ body {
   margin-right: 0.8rem;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .fab:hover {
@@ -973,7 +973,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .articles__card-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
