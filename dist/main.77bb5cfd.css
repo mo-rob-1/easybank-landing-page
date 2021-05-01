@@ -525,7 +525,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .header__container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -628,7 +628,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .hero__col-1-text-wrapper {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 460px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -722,9 +722,8 @@ body {
 @media only screen and (min-width: 1440px) {
   .feature__container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
     text-align: left;
-    padding-bottom: 5rem;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -809,8 +808,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .articles__container {
     margin: 0 auto;
-    max-width: 1200px;
-    padding-bottom: 5rem;
+    max-width: 1300px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -851,7 +849,7 @@ body {
 @media only screen and (min-width: 1440px) {
   .footer__container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
     padding-top: 4rem;
   }
 }

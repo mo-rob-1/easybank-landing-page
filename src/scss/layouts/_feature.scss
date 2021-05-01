@@ -17,9 +17,8 @@
     }
     @include responsive(laptop-lg) {
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1300px;
       text-align: left;
-      padding-bottom: 5rem;
     }
     @include responsive(desktop) {
       margin: 0 auto;
