@@ -15,6 +15,7 @@
       margin: 0 auto;
       max-width: 1024px;
       text-align: left;
+      padding: 3rem 4rem;
     }
     @include responsive(laptop-lg) {
       margin: 0 auto;
@@ -37,7 +38,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
     }
-    @include responsive(laptop) {
+    @include responsive(laptop-lg) {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
     }
@@ -55,6 +56,9 @@
     }
   }
   &__icon-desc {
+    @include responsive(laptop) {
+      max-width: 360px;
+    }
     @include responsive(desktop) {
       max-width: 300px;
     }

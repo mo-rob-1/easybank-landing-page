@@ -9,7 +9,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
     }
-    @include responsive(laptop) {
+    @include responsive(laptop-lg) {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
     }

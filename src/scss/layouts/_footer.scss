@@ -19,6 +19,8 @@
       max-width: 1024px;
       padding-top: 3rem;
       padding-bottom: 1rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
     @include responsive(laptop-lg) {
       margin: 0 auto;
@@ -42,6 +44,10 @@
       align-items: center;
       justify-content: center;
       text-align: left;
+      font-size: 0.9rem;
+    }
+    @include responsive(laptop-lg) {
+      font-size: 1rem;
     }
   }
 

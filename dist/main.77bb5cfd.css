@@ -389,7 +389,12 @@ body {
 @media only screen and (min-width: 1440px) {
   .hero__title {
     max-width: 400px;
-    font-size: 3.3rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .hero__title {
+    font-size: 3rem;
   }
 }
 .hero__desc {
@@ -515,6 +520,8 @@ body {
     grid-row-gap: 0px;
     margin: 0 auto;
     max-width: 1024px;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -594,7 +601,14 @@ body {
   .hero__col-1 {
     padding: 0;
     text-align: left;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero__col-1 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .hero__col-2 {
@@ -610,12 +624,13 @@ body {
 @media only screen and (min-width: 1024px) {
   .hero__col-1-text-wrapper {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 360px;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1920px) {
   .hero__col-1-text-wrapper {
-    max-width: 400px;
+    position: relative;
+    left: 1.4rem;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -699,6 +714,7 @@ body {
     margin: 0 auto;
     max-width: 1024px;
     text-align: left;
+    padding: 3rem 4rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -728,7 +744,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .feature__icon-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -746,6 +762,11 @@ body {
   .feature__desc {
     margin: initial;
     max-width: 550px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .feature__icon-desc {
+    max-width: 360px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -775,6 +796,7 @@ body {
   .articles__container {
     margin: 0 auto;
     max-width: 1024px;
+    padding: 3rem 4rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -817,6 +839,8 @@ body {
     max-width: 1024px;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -844,6 +868,12 @@ body {
     align-items: center;
     justify-content: center;
     text-align: left;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer__nav-list {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -943,7 +973,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .articles__card-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;

@@ -26,8 +26,12 @@
     @include responsive(laptop) {
       padding: 0;
       text-align: left;
-      // padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    @include responsive(laptop-lg) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   &__col-2 {
@@ -41,10 +45,11 @@
   &__col-1-text-wrapper {
     @include responsive(laptop) {
       margin: 0 auto;
-      max-width: 400px;
+      max-width: 360px;
     }
-    @include responsive(laptop-lg) {
-      max-width: 400px;
+    @include responsive(desktop) {
+      position: relative;
+      left: 1.4rem;
     }
   }
   &__desc {
