@@ -50,6 +50,7 @@
     @include responsive(desktop) {
       position: relative;
       left: 1.4rem;
+      max-width: 360px;
     }
   }
   &__desc {

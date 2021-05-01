@@ -635,6 +635,7 @@ body {
   .hero__col-1-text-wrapper {
     position: relative;
     left: 1.4rem;
+    max-width: 360px;
   }
 }
 @media only screen and (min-width: 600px) {
